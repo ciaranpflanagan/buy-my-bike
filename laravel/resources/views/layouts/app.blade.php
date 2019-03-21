@@ -18,6 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet"> <!-- Custom Styles -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -40,6 +45,18 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('store') }}">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('shipping') }}">Shipping</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">|</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>

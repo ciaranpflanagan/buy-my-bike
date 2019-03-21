@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Store Routes
+Route::get('/store', 'StoreController@index')->name('store');
+Route::get('/store/{slug}', 'StoreController@product')->name('store.product');
+
+// Other static page routes
+Route::get('/shipping', 'HomeController@shipping')->name('shipping');
+Route::get('/contact', 'HomeController@contact')->name('contact');
