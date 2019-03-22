@@ -1,9 +1,25 @@
-/*Homepage styling*/
+/*Site wide styling*/
+body {
+	background-color: #EDEDED !important;
+}
+nav {
+	font-weight: 600;
+}
+
+/*Homepage and other page styling*/
 .main-heading {
 	text-align: center;
 }
 .main-sub-heading {
 	color: #727272;
+}
+.small-para {
+	font-size: 12px;
+}
+
+/*Store styling*/
+.divider {
+	height: 20px;
 }
 
 /*Desktop only styles*/

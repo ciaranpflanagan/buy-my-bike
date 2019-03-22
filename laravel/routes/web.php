@@ -24,5 +24,5 @@ Route::get('/store', 'StoreController@index')->name('store');
 Route::get('/store/{slug}', 'StoreController@product')->name('store.product');
 
 // Other static page routes
-Route::get('/shipping', 'HomeController@shipping')->name('shipping');
-Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/shipping', 'PagesController@shipping')->name('shipping');
+Route::get('/contact', 'PagesController@contact')->name('contact');
