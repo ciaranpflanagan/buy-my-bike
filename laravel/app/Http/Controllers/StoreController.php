@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -8,7 +9,10 @@ class StoreController extends Controller
 {
 	// Index page for store section
     public function index() {
-        return view('store.feed');
+        // Retrieving data from database
+        $data = DB::table('products')->get();
+
+        return view('store.feed')->with('products', $data);
     }
 
     // Displays the product page

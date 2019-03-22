@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -22,6 +23,9 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        return view('home');
+        // Retrieving data from database
+        $data = DB::table('products')->get();
+
+        return view('home')->with('products', $data);
     }
 }
