@@ -16,7 +16,9 @@ class StoreController extends Controller
     }
 
     // Displays the product page
-	public function product() {
-        return view('store.product');
+	public function product(Request $request) {
+        $product = DB::table('products')->where('slug', $request->slug)->get();
+        
+        return view('store.product')->with('products', $product);
     }
 }
