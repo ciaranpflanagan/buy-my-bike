@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Store Routes
 Route::get('/store', 'StoreController@index')->name('store');
 Route::get('/store/{slug}', 'StoreController@product')->name('store.product');
+Route::get('/store/{slug}/pay', 'PaymentController@index')->name('store.pay');
 
 // Other static page routes
 Route::get('/shipping', 'PagesController@shipping')->name('shipping');
