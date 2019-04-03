@@ -14,7 +14,7 @@
                             <div class="col-md-4">
                                 <h2>{{ $product->title }}</h2>
                                 <p>{{ $product->description }}</p>
-                                <button class="btn btn-primary">Buy Now €{{ $product->price }}</button>
+                                <a href="{{ route('store.pay', ['slug' => $product->slug]) }}"><button class="btn btn-primary">Buy Now €{{ $product->price }}</button></a>
                             </div>
                         </div>
                     </div>

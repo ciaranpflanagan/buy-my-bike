@@ -5,6 +5,9 @@ body {
 nav {
 	font-weight: 600;
 }
+.product-pay, .pay-by-card {
+	text-align: center;
+}
 
 /*Homepage and other page styling*/
 .main-heading {
