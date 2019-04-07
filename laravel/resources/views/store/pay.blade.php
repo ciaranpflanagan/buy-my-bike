@@ -39,11 +39,11 @@
 									<div class="row">
 	                                	<div class="col-md-4">
 	                                		<label for="Expiry">Expiry</label>
-	                                		<input type="text" name="expiry" class="form-control" placeholder="01/99">
+	                                		<input type="text" name="expiry" class="form-control" maxlength="5" placeholder="01/99">
 	                                	</div>
 	                                	<div class="col-md-4">
 	                                		<label for="code">Security Code</label>
-	                                		<input type="text" name="code" class="form-control" placeholder="123">
+	                                		<input type="text" name="code" class="form-control" maxlength="4" placeholder="123">
 	                                	</div>
 	                                	<div class="col-md-4">
 	                                		<br>
