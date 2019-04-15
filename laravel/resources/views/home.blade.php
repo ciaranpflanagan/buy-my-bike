@@ -7,7 +7,10 @@
             <h1>All Sales</h1>
             <div class="card">
                 <div class="card-body">
-                    
+                    @foreach($sales as $sale)
+                        <h4>{{ $sale->name }}</h4>
+                        <h6>Amount: {{ $sale->amount }}</h6> <br>
+                    @endforeach
                 </div>
             </div>
         </div>

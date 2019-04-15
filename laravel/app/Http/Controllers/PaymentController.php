@@ -17,13 +17,13 @@ class PaymentController extends Controller {
     public function thank_you(Request $request) {
     	// Retrieving product from database
         $product = DB::table('products')->where('slug', $request->slug)->first();
-        
+
         // Adding sale into sales table
-        $sale = DB::table('sales')->insert(
-            ['product_id' => 1],
-            ['name' => 'test'],
-            ['amount' => 20]
-        );
+        $sale = DB::table('sales')->insert([
+            'product_id' => $product->id,
+            'name' => "$product->title",
+            'amount' => $product->price
+        ]);
         
         return view('store.thank_you')->with('products', $product);
     }
