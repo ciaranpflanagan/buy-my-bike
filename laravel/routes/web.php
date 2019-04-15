@@ -28,3 +28,4 @@ Route::post('/store/{slug}/thank_you', 'PaymentController@thank_you')->name('sto
 // Other static page routes
 Route::get('/shipping', 'PagesController@shipping')->name('shipping');
 Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::post('/contact', 'PagesController@submit_contact')->name('submit_contact');
