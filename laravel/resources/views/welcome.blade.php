@@ -15,6 +15,39 @@
             <img src="{{ asset('img/background-image.jpg') }}" alt="" class="img-fluid">
         </div>
     </div>
+        <div class="divider"></div>
+    <div class="row">
+        <div class="col-md-4 info-boxes">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Browse</h1>
+                    <p>
+                        Browse our wide range of new and second hand bikes!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 info-boxes">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Choose</h1>
+                    <p>
+                        Choose your perfect bike and browse the many pictures of it!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 info-boxes">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Pay</h1>
+                    <p>
+                        Quickly and easily pay for your bike in no time at all. 
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @stop
