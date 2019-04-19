@@ -1,0 +1,16 @@
+Edited / Created All Files in the following directories
+- resources/views
+- resources/views/layouts
+- resources/views/store
+
+Edited / Created
+- routes/web.php
+- public/css/styles.css (Main CSS Stylesheet)
+- public/img/ (All Files)
+
+Database Files
+- database/migrations/ (All files except, 2014_10_12_000000_create_users_table.php and 2014_10_12_100000_create_password_resets_table.php)
+- database/seeds/ (All files)
+
+Controllers
+app/Http/Controllers/ (All files except Auth directory)
