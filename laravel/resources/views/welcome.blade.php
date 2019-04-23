@@ -10,6 +10,8 @@
             <h5 class="main-sub-heading">
                 Road, race, commuter / hybrid, kids bike? We have them all!
             </h5>
+            <br><br>
+            <a href="{{ route('store') }}"><button class="btn btn-primary form-control">Visit Our Store</button></a>
         </div>
         <div class="col-md-8 background-image">
             <img src="{{ asset('img/background-image.jpg') }}" alt="" class="img-fluid">
