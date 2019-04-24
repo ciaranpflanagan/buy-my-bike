@@ -24,20 +24,6 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2>Further Product Details</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 @endforeach
 @endsection

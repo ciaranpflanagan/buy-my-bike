@@ -17,7 +17,7 @@
             <img src="{{ asset('img/background-image.jpg') }}" alt="" class="img-fluid">
         </div>
     </div>
-        <div class="divider"></div>
+        <div class="divider"></div><br>
     <div class="row">
         <div class="col-md-4 info-boxes">
             <div class="card">
