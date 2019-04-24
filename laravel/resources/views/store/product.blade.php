@@ -9,7 +9,10 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-8">
-                                <img src="{{ asset('img/background-image.jpg') }}" alt="" class="img-fluid float-left">
+                                <?php 
+                                    $image = asset($product->image);
+                                ?>
+                                <img src="{{ $image }}" alt="" class="img-fluid float-left">
                             </div>
                             <div class="col-md-4">
                                 <h2>{{ $product->title }}</h2>
